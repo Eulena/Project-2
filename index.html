@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Data Journalism and D3</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1>Data Journalism and D3</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div class="article">
+          <h2>Correlations Between Obesity vs. Poverty, and Healthcare Risks in America</h2>
+          <p>This visualization chart was a result of the data provided to us students, wherein certain associations between 
+          demographics and behavioral risk factors from the American Community Survey (ACS), U.S. Census Bureau and 
+          the Behavioral Risk Factor Surveillance System (BRFSS) during the year 2014 were collected. The chart below proves that the U.S. 
+          population are affected by obesity, in that one common findings that exists is that all or virtually all low-income 
+          states are far more likely to show signs of obesity. Each marker in this chart represents an individual state in the 
+          USA, and as you hover your mouse over by state, the tooltip will display data accordingly by percentage.</p>
+
+          <p>However, in reviewing the entire data, there are some constraints, I believe there are at least two important facts 
+          overlooked: (1) the relationship between income and weight can vary by gender, race-ethnicity, or age and, (2) disparities 
+          by income varies overtime, particularly for adults.</p>
+
+          <p>Overall, the chart reveals that the state of Arkansas holds the highest percentage of Obesity (35.9%), while the 
+          state of New Mexico holds the highest percentage of Poverty (21.3%), the state of West Virginia holds the highest
+          percentage of Smoke (26.7%), the state of Texas holds the highest lack of Healthcare (24.9%) in the entire United States
+          in the year 2014. This goes to show that there is clearly an an epidemic with such a high impact, in terms of lives and dollars.
+          A clear and strong plan for battling the obesity epidemic that impacts tens of millions of lives in the U.S. must be done.</p>
+
+          <p>Data on Obesity standsout in America, and it is a staggering public health crisis, and therefore, it is worth mentioning that one
+          of the many obvious culprits we come accross with every day are the super-sized drinks, processed foods and its obscene portion sizes
+          widely available in the market.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12  col-md-9">
+          <div id="scatter">
+            <!-- We append our chart here. -->
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Footer-->
+  <div id="footer">
+    <p>MonicaZL&copy;2019</p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+</html>
